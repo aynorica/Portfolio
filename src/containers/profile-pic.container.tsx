@@ -4,7 +4,7 @@ export default function ProfilePicContainer() {
 	return (
 		<div className="w-full h-full max-w-[344px] max-h-[304px] rounded-full overflow-hidden profile-bg">
 			<img
-				src="/branding/profile-pic.png"
+				src="./branding/profile-pic.png"
 				className="max-w-[344px] max-h-[344px] w-full h-full"
 			/>
 		</div>

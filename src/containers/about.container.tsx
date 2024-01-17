@@ -74,7 +74,7 @@ export default function AboutContainer() {
 					</div>
 					<div className="xl:block hidden">
 						<DynamicProfilePic
-							src="/branding/profile-pic-fantasy.jpg"
+							src="./branding/profile-pic-fantasy.jpg"
 							className="max-w-[344px] max-h-[344px] rounded-full overflow-hidden shadow-2xl shadow-pink-950 border-2 border-pink-950"
 						/>
 					</div>
