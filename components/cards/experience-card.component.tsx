@@ -25,7 +25,7 @@ export default function ExperienceCardsComponent() {
 					/>
 				</div>
 				<Image
-					src="/images/nakit-coins.png"
+					src="/portfolio//images/nakit-coins.png"
 					width={250}
 					height={250}
 					alt="linear demo image"
@@ -68,7 +68,7 @@ export default function ExperienceCardsComponent() {
 					/>
 				</div>
 				<Image
-					src="/images/freelance-img.png"
+					src="/portfolio//images/freelance-img.png"
 					width={400}
 					height={500}
 					alt="linear demo image"

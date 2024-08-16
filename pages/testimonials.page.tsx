@@ -16,7 +16,7 @@ export default function TestimonialsPage() {
 He always came up with creative fixed and ideas no matter how competitive the situation was. 
 
 He is a team player, social person, and I highly recommend him`}
-				imageUrl="/images/testimonial-hazem.jpeg"
+				imageUrl="/portfolio//images/testimonial-hazem.jpeg"
 				name="Hazem Elsayed"
 				title="Lead Offensive Security Engineer @ Cyrex | Top 300 on Hackerone."
 				linkedInUrl="https://www.linkedin.com/in/hacktus/"
