@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
     push:
         branches:
-            - main # Change this to your default branch if it's not `main`
+            - main # Adjust to your default branch if different
 
 jobs:
     deploy:
@@ -21,13 +21,12 @@ jobs:
             - name: Install dependencies
               run: npm install
 
-            - name: Build and Export the project
-              run: npm run deploy
+            - name: Build the project
+              run: npm run build
 
             - name: Deploy to GitHub Pages
               uses: peaceiris/actions-gh-pages@v4
               with:
                   github_token: ${{ secrets.GITHUB_TOKEN }}
-                  publish_dir: ./out
-                  # Change the below if you need to deploy to a different branch
-                  publish_branch: gh-pages
+                  publish_dir: ./out # The 'out' directory is the default for static exports
+                  publish_branch: gh-pages # Adjust if you use a different branch
