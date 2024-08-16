@@ -111,7 +111,7 @@ export const Logo = () => {
 		>
 			<div className="h-7 w-7 rounded-full overflow-hidden justify-center items-center">
 				<Image
-					src="/images/profile.jpg"
+					src="/portfolio//images/profile.jpg"
 					alt="profile-pic"
 					width={50}
 					height={50}

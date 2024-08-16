@@ -12,7 +12,7 @@ export default function ExperiencePage() {
 				className="text-secondary"
 			/>
 			<Divider className="sm:max-w-96 mt-7 max-w-64" />
-			<div className="mt-10">
+			<div className="mt-10 overflow-y-auto max-h-screen md:pb-0 pb-96">
 				<ExperienceCardsComponent />
 			</div>
 		</PageContainer>

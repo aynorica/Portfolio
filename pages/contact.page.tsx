@@ -11,7 +11,7 @@ import Divider from "@/components/utils/divider.component";
 
 export default function ContactPage() {
 	return (
-		<PageContainer className="">
+		<PageContainer className="md:pb-0 pb-64">
 			<MaskedText
 				isHeading={true}
 				text="HOW TO CONTACT ME?"

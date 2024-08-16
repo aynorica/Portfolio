@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function ExperienceCardsComponent() {
 	return (
-		<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl w-full xl:px-0 px-5">
+		<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl w-full xl:px-0 px-5 ">
 			<WobbleCard
 				containerClassName="col-span-1 lg:col-span-2 h-full bg-primary lg:min-h-[300px] xl:max-h-[500px]"
 				className=""

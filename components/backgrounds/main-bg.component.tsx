@@ -21,6 +21,7 @@ export default function MainBg({
 					//   I'm sorry but this is what peak developer performance looks like // trigger warning
 					className={cn(
 						`
+						hidden md:block
             [--white-gradient:repeating-linear-gradient(100deg,var(--slate-900)_0%,var(--slate-900)_7%,var(--transparent)_10%,var(--transparent)_12%,var(--slate-900)_16%)]
             [--dark-gradient:repeating-linear-gradient(100deg,var(--primary)_0%,var(--primary)_7%,var(--transparent)_10%,var(--transparent)_12%,var(--primary)_16%)]
             [--aurora:repeating-linear-gradient(100deg,var(--orange-700)_10%,var(--secondary)_15%,var(--orange-500)_20%,var(--secondary)_25%,var(--orange-900)_30%)]
