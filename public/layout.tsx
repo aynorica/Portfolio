@@ -1,22 +1,15 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Inter } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "./provider";
+import SideBarNavigator from "@/components/bars/sidebar-nav.component";
+import GradientBg from "@/components/backgrounds/gradient-bg.component";
+import MainBg from "@/components/backgrounds/main-bg.component";
 
-const geistSans = localFont({
-	src: "./fonts/GeistVF.woff",
-	variable: "--font-geist-sans",
-	weight: "100 900",
-});
-const geistMono = localFont({
-	src: "./fonts/GeistMonoVF.woff",
-	variable: "--font-geist-mono",
-	weight: "100 900",
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "AMIR DEILAMIZADEH Portfolio",
-	description: "A modern & minimalist portfolio of Amir Deilamizadeh",
+	title: "AMIR DEILAMIZADEH",
+	description: "Portfolio of Amir Deilamizadeh",
 };
 
 export default function RootLayout({
@@ -56,17 +49,12 @@ export default function RootLayout({
 				/>
 				<link rel="manifest" href="/site.webmanifest" />
 			</head>
-			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-			>
-				<ThemeProvider
-					attribute="class"
-					defaultTheme="dark"
-					enableSystem
-					disableTransitionOnChange
-				>
-					{children}
-				</ThemeProvider>
+			<body className={inter.className}>
+				<MainBg>
+					<GradientBg>
+						<SideBarNavigator>{children}</SideBarNavigator>
+					</GradientBg>
+				</MainBg>
 			</body>
 		</html>
 	);
