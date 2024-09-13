@@ -3,10 +3,13 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
+import Link from "next/link";
+
 
 const Hero = () => {
 	return (
 		<div className="pb-20 pt-30">
+
 			<div>
 				<Spotlight
 					className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -26,6 +29,7 @@ const Hero = () => {
 			</div>
 			<div className="flex justify-center relative my-20 z-10">
 				<div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+
 					<img
 						src="/portfolio/profile.png"
 						alt="profile picture"
@@ -34,6 +38,14 @@ const Hero = () => {
 					<h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
 						Professionalism, Innovation & Continuous Learning
 					</h2>
+					<div className={"flex justify-center items-center gap-4 mt-4"}>
+						<Link href={"https://github.com/aynorica"} target={"_blank"}>
+							<img src="/portfolio/github.svg" alt="github"/>
+						</Link>
+						<Link href={"https://www.linkedin.com/in/amir-deilamizadeh-2712a6192/"} target={"_blank"}>
+							<img src="/portfolio/linkedin.svg" alt="github"/>
+						</Link>
+					</div>
 					<TextGenerateEffect
 						words="Crafting Reliable & Scalable Web Solutions"
 						className="text-center text-[40px] md:text-5xl lg:text-6xl max-w-4xl"
@@ -46,7 +58,7 @@ const Hero = () => {
 					<a href="#about">
 						<MagicButton
 							title="Show my work"
-							icon={<FaLocationArrow />}
+							icon={<FaLocationArrow/>}
 							position="right"
 						/>
 					</a>
